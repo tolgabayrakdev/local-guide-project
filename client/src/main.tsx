@@ -6,8 +6,6 @@ import routes from './routes';
 import { ChakraProvider } from '@chakra-ui/react';
 import Loading from './components/Loading';
 
-
-
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ChakraProvider>
