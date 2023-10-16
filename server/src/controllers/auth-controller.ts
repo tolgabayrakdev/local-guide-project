@@ -41,7 +41,11 @@ export class AuthController {
                 message: 'User created succesful.',
             });
         } catch (error: any) {
-            res.status(500).json({ message: error.message });
+            if (error instanceof HttpException) {
+                res.status(error.status).json({ message: error.message });
+            } else {
+                res.status(500).json({ message: "Internal server error." });
+            }
         }
     };
 
