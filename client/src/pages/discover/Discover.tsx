@@ -23,7 +23,6 @@ export default function Discover() {
           <Tab>Gezi</Tab>
           <Tab>Kültür Tarih</Tab>
           <Tab>Yiyecek ve İçecek</Tab>
-
         </TabList>
         <TabPanels>
           <TabPanel>

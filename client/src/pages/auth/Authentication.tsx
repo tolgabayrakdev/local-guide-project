@@ -81,8 +81,6 @@ export default function Authentication() {
   }
 
 
-
-
   return (
     <div className="flex h-screen justify-center items-center">
       {
