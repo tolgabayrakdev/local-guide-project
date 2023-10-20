@@ -4,6 +4,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import "./db";
 import authRouter from "./routes/auth-router";
+import cityRouter from "./routes/city-router";
 
 const app: Express = express();
 
@@ -14,6 +15,7 @@ app.use(morgan("short"));
 
 
 app.use("/api/v1/auth", authRouter);
+app.use("/api/v1/cities", cityRouter);
 
 app.listen(1234, () => {
     console.log(`[Server]: Node server running on port: 1234`);
