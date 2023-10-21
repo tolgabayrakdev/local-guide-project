@@ -8,7 +8,7 @@ export class CityController {
 
     public listCities = async (req: Request, res: Response): Promise<void> => {
         try {
-            const result = await this.cityService.list();
+            const result = await this.cityService.list();            
             res.status(200).json({ cities: result });
         } catch (err) {
             res.status(500).json(err);

@@ -4,10 +4,10 @@ export class CityService {
 
     public async list(): Promise<object> {
         const text = `
-        SELECT * FROM cities;
+        SELECT name FROM city;
         `
         const result = await pool.query(text);
-        const cities = result.rows[0];
+        const cities = result.rows;
         return cities;
     }
 }
